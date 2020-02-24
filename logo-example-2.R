@@ -98,7 +98,12 @@ plot(got_graph, rescale = F, layout = l1)
 
 # w/o letters
 V(got_graph)$label<-""
-#png("./logos/qcmb-noletter.png")
+png("./logos/002-logo.png")
 l2 <- layout_with_mds(got_graph)
-plot(got_graph, layout=l2, label.cex=20, vertex.label.color="white",size=20, vertex.label.cex=2.5)
-#dev.off()
+plot(got_graph, layout=l2, label.cex=20, vertex.label.color="white",size=20, vertex.label.cex=2.5,
+     vertex.size=15)
+dev.off()
+
+
+plot(got_graph, layout=l2, label.cex=20, vertex.label.color="white",size=20, vertex.label.cex=2.5,
+     vertex.size=15)
