@@ -95,9 +95,24 @@ l2 <- layout_with_mds(got_graph)
 plot(got_graph, layout=l2, label.cex=20, vertex.label.color="white",size=20, vertex.label.cex=2.5)
 dev.off()
 
+
+
+pdf("./logos/qcmb.pdf")
+l2 <- layout_with_mds(got_graph)
+plot(got_graph, layout=l2, label.cex=20, vertex.label.color="white",size=20, vertex.label.cex=2.5)
+dev.off()
+
 # w/o letters
 V(got_graph)$label<-""
 png("./logos/qcmb-noletter.png")
+l2 <- layout_with_mds(got_graph)
+plot(got_graph, layout=l2, label.cex=20, vertex.label.color="white",size=20, vertex.label.cex=2.5)
+dev.off()
+
+
+# w/o letters
+V(got_graph)$label<-""
+pdf("./logos/qcmb-noletter.pdf")
 l2 <- layout_with_mds(got_graph)
 plot(got_graph, layout=l2, label.cex=20, vertex.label.color="white",size=20, vertex.label.cex=2.5)
 dev.off()
